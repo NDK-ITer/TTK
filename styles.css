@@ -11,7 +11,47 @@
         .khuong {
             width: 100%;
             height: 80%;
-            background: red;
+            /* background: red; */
+            .contast{
+                width: 100%;
+                height: 25%;
+                /* background: green; */
+                display: flex;
+                .phone-number{
+                    width: 32%;
+                    height: 100%;
+                    /* background: goldenrod; */
+                    text-align: left !important;
+                    display: flex;
+                }
+                .ad-contast{
+                    width: 34%;
+                    /* background: orangered; */
+                    display: flex;
+                    gap: 1rem;
+                    div{
+                        width: 20%;
+                        height: 90%;
+                        border-radius: 2px;
+                        color: white;
+                    }
+                }
+                .auth-search{
+                    width: 34%;
+                    height: 100%;
+                    /* background: red; */
+                    display: flex;
+                }
+            }
+            .banner{
+                width: 100%;
+                height: 75%;
+                background: purple;
+                display: flex;
+                img{
+                    border: 1px solid #00FF00;
+                }
+            }
 
         }
         .thang-1 {

@@ -4,18 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <div class="content">
         <div class="header">
             <div class="khuong">
-    
+
             </div>
-            <div class="thang-1">
-    
+            <div class="thang-1"
+                style="display: flex; text-align: center; width: 100%;  justify-content: space-around;">
+                <i class="fas fa-home solid" style="font-size: 10px;"></i>
+                <a class="text solid" class="" href="#">Thời sự</a>
+                <a class="text solid" href="#">Thế giới</a>
+                <a class="text solid" href="#">Kinh doanh</a>
+                <a class="text solid" href="#">Giải trí</a>
+                <a class="text solid" href="#">Thể thao</a>
+                <a class="text solid" href="#">Pháp luật</a>
+                <a class="text solid" href="#">Giáo dục</a>
+                <a class="text solid" href="#">Sức khỏe</a>
+                <a class="text solid" href="#">Gia Đình</a>
+                <a class="text solid" href="#">Du lịch</a>
+                <a class="text solid" href="#">Khoa học</a>
+                <a class="text solid" href="#">Số hóa</a>
+                <a class="text solid" href="#">Xe</a>
+                <a class="text solid" href="#">Cộng đồng</a>
+                <a class="text solid" href="#">Tâm sự</a>
+                <a class="text solid" href="#">Video</a>
+                <a class="text solid" href="#">Cười</a>
+                <a class="text" href="#">Rao vặt</a>
             </div>
         </div>
         <div class="body">
@@ -81,15 +103,54 @@
                     </div>
                     
                 </div>
-                
-    
+            
             </div>
             <div class="thang-2">
-    
+                <div class="div-1" style="display: flex; justify-content: space-around;">
+                    <span style="font-size: 10px;  " id="datetime"></span>
+                    <span  style="font-size: 10px; background-color: gray;">24h qua</span>
+                    <span style="font-size: 10px; background-color: rgb(176, 176, 176);">RSS</span>
+                    <script>
+                        const datetimeSpan = document.getElementById("datetime");
+
+                        function updateTime() {
+                            const dt = new Date();
+                            const options = {
+                                weekday: "long",
+                                year: "numeric",
+                                month: "long",
+                                day: "numeric",
+                                hour: "numeric",
+                                minute: "numeric",
+                                second: "numeric",
+                                timeZone: "Asia/Ho_Chi_Minh", // Thay đổi múi giờ nếu cần thiết
+                            };
+
+                            const formattedTime = dt.toLocaleString("vi-VN", options);
+                            datetimeSpan.textContent = formattedTime;
+                        }
+
+                        setInterval(updateTime, 1000);
+
+                        updateTime();
+                    </script>
+                </div>
+                <div class="div-2">
+                    <img src="right-ads-1.png" alt="Image 2 description">
+                </div>
+                <a></a>
+                <div class="div-3">
+                    <img src="right-ads-2.png" alt="Image 3 description">
+                </div>
+                <a></a>
+                <div class="div-4">
+                    <img src="right-ads-3.png" alt="Image 4 description">
+                </div>
+
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

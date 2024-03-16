@@ -1,0 +1,39 @@
+.content {
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    background: grey;
+
+    .header {
+        width: 100%;
+        height: 30%;
+
+        .khuong {
+            width: 100%;
+            height: 80%;
+            background: red;
+
+        }
+        .thang-1 {
+            width: 100%;
+            height: 20%;
+            background: blue;
+
+        }
+    }
+    .body{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        .thu{
+            width: 60%;
+            height: 100%;
+            background: yellow;
+        }
+        .thang-2{
+            width: 40%;
+            height: 100%;
+            background: blue;
+        }
+    }
+}

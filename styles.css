@@ -2,7 +2,7 @@
     width: 80%;
     height: 100vh;
     margin: auto;
-    background: grey;
+    /* background: grey; */
 
     .header {
         width: 100%;
@@ -14,26 +14,93 @@
             background: red;
 
         }
+
         .thang-1 {
             width: 100%;
             height: 20%;
-            background: blue;
+            /* background: blue; */
+
+            .text {
+                font-size: 9px;
+                color: #000;
+                text-decoration: none;
+                width: auto;
+                /* margin-left: 10px; */
+            }
+
+            .solid {
+                height: 10px;
+                border-right: 1px solid #929191;
+            }
 
         }
     }
-    .body{
+
+    .body {
         width: 100%;
         height: 70%;
         display: flex;
-        .thu{
+
+        .thu {
             width: 60%;
             height: 100%;
             background: yellow;
         }
-        .thang-2{
+
+        .thang-2 {
             width: 40%;
             height: 100%;
-            background: blue;
+
+            /* background: blue; */
+            div {
+                border-color: rgb(128, 126, 126);
+                border-width: 1px;
+                border-style: solid;
+            }
+
+            .div-1 {
+                height: 5.5%;
+                width: 100%;
+
+            }
+
+            .div-2 {
+                height: 31.5%;
+                width: 100%;
+            }
+
+            .div-3 {
+                height: 31.5%;
+                width: 100%;
+            }
+
+            .div-4 {
+                height: 31.5%;
+                width: 100%;
+            }
+
+            img {
+                width: 100%;
+                height: 90%;
+                object-fit: cover;
+            }
+
+            .icon-house {
+                width: 16px;
+                height: 16px;
+                fill: #000;
+            }
+
+           
+         
+
+            .thong-tin-thoi-gian {
+                display: flex;
+                align-items: center;
+                border: 1px solid #ddd;
+                padding: 10px;
+                border-radius: 5px;
+            }
         }
     }
 }
